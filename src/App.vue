@@ -41,7 +41,7 @@ export default defineComponent({
                 // this.searchResults = new PublicationCollection(response.data.items);
 
                 // Using a factory
-                this.searchResults = LibraryCollectionFactory.createFromGoogleBooks(response.data.results);
+                this.searchResults = LibraryCollectionFactory.createFromITunesAPI(response.data.results);
                 console.log("searchResults here = ",this.searchResults.items)
               }
             })

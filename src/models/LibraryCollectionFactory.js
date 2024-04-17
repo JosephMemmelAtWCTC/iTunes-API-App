@@ -10,9 +10,9 @@ import TVEpisode from "@/models/Types/TVEpisode.js";
 
 export default class LibraryCollectionFactory {
     // Static methods can be called without creating an instance.
-    // For example: PublicationCollectionFactory.createFromGoogleBooks(...)
+    // For example: PublicationCollectionFactory.createFromITunesAPI(...)
     // will return a new PublicationCollection
-    static createFromGoogleBooks(libraryItems){
+    static createFromITunesAPI(libraryItems){
 
         const collection = new LibraryCollection();
 
@@ -61,6 +61,6 @@ export default class LibraryCollectionFactory {
 
     static createFromLocalStorage(items){
         // currently this is no different, but could be in the future
-        return this.createFromGoogleBooks(items);
+        return this.createFromITunesAPI(items);
     }
 }
