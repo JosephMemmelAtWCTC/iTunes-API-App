@@ -18,15 +18,9 @@ export default class LibraryCollection {
     // Methods for using the collection.
     add(publication){
         const newLibraryItem = new LibraryItem(publication);
-        // newLibraryItem.id = publication.id;
-        console.log("publication.id", publication.id);
 
-        // newLibraryItem.id = @@@
         this._arr.push(newLibraryItem);
         return this;
-        // arr.add = function(media){
-        //     this.push(new LibraryItem(media));
-        // }
     };
 
     remove(publication){

@@ -56,14 +56,6 @@ export default {
           {{ item.formattedBuyPrice }}
         </td>
       </tr>
-      <tr>
-        <td class="text-start">
-          <span>Rent</span>
-        </td>
-        <td class="text-start">
-          {{ item.formattedRentPrice }}
-        </td>
-      </tr>
 
       <tr v-if="item.discCount > 1">
         <td class="text-start">

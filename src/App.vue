@@ -9,8 +9,7 @@ export default defineComponent({
   components: {LibraryItemList},
   data: function(){
     return {
-      // searchTerm: "Curious George",
-      searchTerm: "Talor swift",
+      searchTerm: "Curious George",
       searchResults: new LibraryCollection(),
     }
   },
